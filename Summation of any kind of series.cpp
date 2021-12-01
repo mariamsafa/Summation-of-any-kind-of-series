@@ -8,11 +8,13 @@ int main()
 	printf("Enter '3' to find the summation of square series\n");//1^2+2^2+3^2+.....+N^2
 	printf("Enter '4' to find the summation of even series\n");//2+4+6+....+N
 	printf("Enter '5' to find the summation of odd series\n");//1+3+%+.....+N
-	printf("Enter '6' to find the summation of cyclic series\n");//1^1+2^2+3^3+.....+
+	printf("Enter '6' to find the summation of cyclic series\n");//1^1+2^2+3^3+.....+N^N
 	printf("Enter choice : ");
 	scanf_s("%d", &choice);
+
 	double first_term, last_data, incremental_value;
-		double sum = 0, i;
+	double sum = 0, i;
+
 	switch (choice)
 	{
 	case 1:
@@ -30,6 +32,7 @@ int main()
 		printf("The summation is %lf\n", sum);
 
 		break;
+
 	case 2:
 		printf("Enter the first term : ");
 		scanf_s("%lf", &first_term);
@@ -45,6 +48,7 @@ int main()
 		printf("The summation is %lf\n", sum);
 
 		break; 
+
 	case 3:
 			printf("Enter the first term : ");
 			scanf_s("%lf", &first_term);
@@ -60,6 +64,7 @@ int main()
 			printf("The summation is %lf\n", sum);
 
 			break;
+
 	case 4:
 		
 		printf("Enter a number : ");
@@ -72,6 +77,7 @@ int main()
 		printf("The summation is %lf\n", sum);
 
 		break;
+
 	case 5:
 
 		printf("Enter a number : ");
@@ -84,6 +90,7 @@ int main()
 		printf("The summation is %lf\n", sum);
 
 		break;
+
 	case 6:
 		printf("Enter the first term : ");
 		scanf_s("%lf", &first_term);
@@ -99,11 +106,14 @@ int main()
 		printf("The summation of this cyclic series is %lf\n", sum);
 
 		break;
+
 	default:
+
 		printf("Wrong input\a");
 		break;
 	}
 	
 	main();
+
 	return 0;
 }
